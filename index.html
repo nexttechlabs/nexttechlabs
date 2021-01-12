@@ -55,14 +55,14 @@
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
+                href="https://www.linkedin.com/company/pdlg-consulting/?viewAsMember=true"
                 ><i
-                  class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "
+                  class="lg:text-gray-300 text-gray-500 fab fa-linkedin text-lg leading-lg "
                 ></i
-                ><span class="lg:hidden inline-block ml-2">Share</span></a
+                ><span class="lg:hidden inline-block ml-2">LinkedIn</span></a
               >
             </li>
-            <li class="flex items-center">
+          <!--  <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="#pablo"
@@ -71,25 +71,25 @@
                 ></i
                 ><span class="lg:hidden inline-block ml-2">Tweet</span></a
               >
-            </li>
+            </li> -->
             <li class="flex items-center">
               <a
                 class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                href="#pablo"
+                href="https://github.com/nexttechlabs"
                 ><i
                   class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "
                 ></i
-                ><span class="lg:hidden inline-block ml-2">Star</span></a
+                ><span class="lg:hidden inline-block ml-2">Github</span></a
               >
             </li>
             <li class="flex items-center">
-              <button
+            <a href="#contact"> <button 
                 class="text-white bg-blue-500  active:bg-blue-500 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                 type="button"
-                style="transition: all 0.15s ease 0s;"
-              >
-                <i class="fas fa-arrow-alt-circle-down"></i> Contact
-              </button>
+                style="transition: all 0.15s ease 0s;" 
+              > 
+                <i class="fas fa-arrow-alt-circle-down"></i> Contact 
+              </button></a>
             </li>
           </ul>
         </div>
@@ -122,9 +122,9 @@
                 <p class="mt-4 text-lg text-gray-300">
                   Next Tech can help your business digitally transform the way it operates. We consult on everything from business applications to mobile aplications and more.
                 </p>
-                <a href="#" class="text-white bg-blue-500 border border-solid border-blue-500 hover:bg-pink-500 hover:text-white active:bg-blue-500 font-bold uppercase px-8 py-4 rounded-full outline-none focus:outline-none mr-1 mb-1 inline-block mt-10 button-head" type="button" style="transition: all .15s ease">
+               <!-- <a href="#" class="text-white bg-blue-500 border border-solid border-blue-500 hover:bg-pink-500 hover:text-white active:bg-blue-500 font-bold uppercase px-8 py-4 rounded-full outline-none focus:outline-none mr-1 mb-1 inline-block mt-10 button-head" type="button" style="transition: all .15s ease">
                   Learn More
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -282,7 +282,7 @@
   
       </section>
   
-      <section class="relative py-20 bg-gray-300">
+      <section id="about" class="relative py-20 bg-gray-300">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style="height: 80px; transform: translateZ(0px);"
@@ -491,7 +491,8 @@
           </div>
         </div>
       </section>
-      <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <section id="contact" class="relative block py-24 lg:pt-0 bg-gray-900">
+        <form name="contact" method="POST" data-netlify="true">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
             <div class="w-full lg:w-6/12 px-4">
@@ -509,7 +510,7 @@
                       for="full-name"
                       >Full Name</label
                     ><input
-                      type="text"
+                      type="text" name="name"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                       placeholder="Full Name"
                       style="transition: all 0.15s ease 0s;"
@@ -521,7 +522,7 @@
                       for="email"
                       >Email</label
                     ><input
-                      type="email"
+                      type="email" name="email"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                       placeholder="Email"
                       style="transition: all 0.15s ease 0s;"
@@ -533,7 +534,7 @@
                       for="subject"
                       >Subject</label
                     ><input
-                      type="subject"
+                      type="subject" name="subject"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
                       placeholder="Subject"
                       style="transition: all 0.15s ease 0s;"
@@ -544,7 +545,7 @@
                       class="block uppercase text-gray-700 text-xs font-bold mb-2"
                       for="message"
                       >Message</label
-                    ><textarea
+                    ><textarea name="message"
                       rows="4"
                       cols="80"
                       class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
@@ -554,7 +555,7 @@
                   <div class="text-center mt-6">
                     <button
                       class="bg-gray-900 text-blue-500 active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
+                      type="submit"
                       style="transition: all 0.15s ease 0s;"
                     >
                       Send Message
@@ -565,6 +566,7 @@
             </div>
           </div>
         </div>
+      </form>
       </section>
     </main>
     <footer class="relative bg-gray-300 pt-8 pb-6">
@@ -596,12 +598,12 @@
             </h5>
            
             <div class="mt-6">
-              <button
+             <button
                 class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i class="flex fab fa-twitter"></i></button
-              ><button
+                <i class="flex fab fa-linkedin"></i></button
+              > <!--button
                 class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
@@ -611,7 +613,7 @@
                 type="button"
               >
                 <i class="flex fab fa-dribbble"></i></button
-              ><button
+              > --><button
                 class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
@@ -630,21 +632,21 @@
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation"
+                      href="#about"
                       >About Us</a
                     >
                   </li>
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://blog.creative-tim.com"
-                      >Blog</a
+                      href="https://www.linkedin.com/company/pdlg-consulting/?viewAsMember=true"
+                      >LinkedIn</a
                     >
-                  </li>
+                  </li> 
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial"
+                      href="https://github.com/nexttechlabs"
                       >Github</a
                     >
                   </li>
@@ -658,7 +660,7 @@
                 >
                 <ul class="list-unstyled">
                
-                  <li>
+                <!--  <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                       href="https://creative-tim.com/terms"
@@ -671,11 +673,11 @@
                       href="https://creative-tim.com/privacy"
                       >Privacy Policy</a
                     >
-                  </li>
+                  </li> -->
                   <li>
                     <a
                       class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us"
+                      href="#contact"
                       >Contact Us</a
                     >
                   </li>
